@@ -1,0 +1,19 @@
+{
+    "name": "Attention Network Task (no practice block or feedback)",
+    "exp_id": "attention-network-task-no-practice",
+    "url": "https://www.github.com/earcanal/attention-network-task-no-practice/",
+    "description":"Attention Network Task with no practice block or feedback screen at the end of the task.",
+    "instructions": "N/A",
+    "template":"jspsych",
+    "cognitive_atlas_task_id": "",
+    "contributors": [
+                     "Ian Eisenberg",
+                     "Zeynep Enkavi",
+                     "Patrick Bissett",
+                     "Vanessa Sochat",
+                     "Russell Poldrack",
+                     "Paul Sharpe"
+                    ], 
+    "time":12,
+    "reference": ["http://www.mitpressjournals.org/doi/pdf/10.1162/089892902317361886"]
+}
