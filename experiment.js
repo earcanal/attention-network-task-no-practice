@@ -237,13 +237,26 @@ var test_intro_block = {
 	}
 };
 
+var wait_block = {
+	type: 'poldrack-text',
+	text: '<div class = centerbox><p class = center-block-text>Please contact the researcher.</p></div>',
+	cont_key: ['c'],
+	data: {
+		trial_id: "end",
+    	exp_id: 'attention_network_task_3'
+	},
+	timing_response: 180000,
+	timing_post_trial: 0,
+	on_finish: assessPerformance
+};
+
 var end_block = {
 	type: 'poldrack-text',
 	text: '<div class = centerbox><p class = center-block-text>Thanks for completing this task!</p><p class = center-block-text>Press <strong>enter</strong> to continue.</p></div>',
 	cont_key: [13],
 	data: {
 		trial_id: "end",
-    	exp_id: 'attention_network_task_2'
+    	exp_id: 'attention_network_task_3'
 	},
 	timing_response: 180000,
 	timing_post_trial: 0,
@@ -383,6 +396,7 @@ var double_cue = {
 
 /* set up ANT experiment */
 var attention_network_task_3_experiment = [];
+attention_network_task_3_experiment.push(wait_block);
 attention_network_task_3_experiment.push(instruction_node);
 
 /* set up ANT practice */
